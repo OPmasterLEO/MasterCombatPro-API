@@ -18,7 +18,7 @@ API for integrating with MasterCombatPro plugin.
 	<dependency>
 	    <groupId>com.github.OPmasterLEO</groupId>
 	    <artifactId>MasterCombatPro-API</artifactId>
-	    <version>1.0.0</version>
+	    <version>master-SNAPSHOT</version>
 	</dependency>
 </dependencies>
 ```
@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'com.github.OPmasterLEO:MasterCombatPro-API:1.0.0'
+    compileOnly 'com.github.OPmasterLEO:MasterCombatPro-API:master-SNAPSHOT'
 }
 ```
 
