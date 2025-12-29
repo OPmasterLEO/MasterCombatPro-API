@@ -4,17 +4,36 @@ API for integrating with MasterCombatPro plugin.
 
 ## Installation
 
-### Gradle
+### Maven
 
-If you're developing a plugin in the same multi-project build, add:
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
 
-```gradle
-dependencies {
-	compileOnly project(":api")
-}
+<dependencies>
+	<dependency>
+	    <groupId>com.github.OPmasterLEO</groupId>
+	    <artifactId>MasterCombatPro-API</artifactId>
+	    <version>-SNAPSHOT</version>
+	</dependency>
+</dependencies>
 ```
 
-If you consume the published artifact, use `compileOnly` with the published coordinates.
+### Gradle
+
+```gradle
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly 'com.github.OPmasterLEO:MasterCombatPro-API:-SNAPSHOT'
+}
+```
 
 ## Getting Started
 
